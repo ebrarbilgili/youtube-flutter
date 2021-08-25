@@ -1,0 +1,20 @@
+{
+    "bottom_nav_bar": {
+        "home": "Home",
+        "shorts": "Shorts",
+        "subscription": "Subscriptions",
+        "library": "Library"
+    },
+    "lib": {
+        "last_watch": "Last Watch",
+        "history": "History",
+        "videos": "Your videos",
+        "video": "video",
+        "films": "Your films",
+        "watch_later": "Watch Later",
+        "playlist": "Playlists",
+        "new_playlist": "New Playlist",
+        "liked": "Likes",
+        "added": "New Added"
+    }
+}
