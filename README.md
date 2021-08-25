@@ -1,20 +1,17 @@
 
 
+
+# Flutter YouTube Clone
+
+Flutter YouTube Clone with MobX State Management, Dio for REST API requests
+
+Watch:
+
 https://user-images.githubusercontent.com/61385522/130791194-93b97e59-6701-4b7a-8e81-d7fc60cbce8b.mov
 
-# youtube_flutter
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Connect with me
+[<img align="left" alt="LinkedIn" width="80" src="https://cdn.exclaimer.com/Handbook%20Images/linkedin-icon_128x128.png" />]( http://www.linkedin.com/in/ebrarbilgili)
+[<img align="left" alt="Medium" width="80" src="https://cdn.exclaimer.com/Handbook%20Images/Medium_128.png" />](https://ebrarbilgili.medium.com)
+[<img align="left" alt="Twitter" width="80" src="https://cdn.exclaimer.com/Handbook%20Images/twitter-icon_128x128.png" />](https://twitter.com/ebrarblg)
+[restjsonapi.com for REST API](https://restjsonapi.com/)
+<br />

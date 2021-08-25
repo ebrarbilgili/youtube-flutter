@@ -71,37 +71,33 @@ class _ShortsViewState extends State<ShortsView> {
               }
               return Stack(
                 children: [
-                  GestureDetector(
-                    onTap: () {
-                      _controller!.value.isPlaying
-                          ? _controller!.pause()
-                          : _controller!.play();
-                    },
-                    child: PageView.builder(
-                        scrollDirection: Axis.vertical,
-                        controller: pageController,
-                        itemCount: viewmodel.videoList.length,
-                        onPageChanged: (value) {
-                          print('url value $value:' +
-                              viewmodel.videoList[value].url.toString());
+                  PageView.builder(
+                      scrollDirection: Axis.vertical,
+                      controller: pageController,
+                      itemCount: viewmodel.videoList.length,
+                      onPageChanged: (value) {
+                        print('url value $value:' +
+                            viewmodel.videoList[value].url.toString());
 
-                          VideoPlayerController.network(
-                            viewmodel.videoList[value].url.toString(),
-                            videoPlayerOptions:
-                                VideoPlayerOptions(mixWithOthers: false),
-                          );
-                        },
-                        itemBuilder: (context, index) {
-                          print('url index  $index:' +
-                              viewmodel.videoList[index].url.toString());
-                          final data = viewmodel.videoList[index];
-                          return Stack(
+                        VideoPlayerController.network(
+                          viewmodel.videoList[value].url.toString(),
+                          videoPlayerOptions:
+                              VideoPlayerOptions(mixWithOthers: false),
+                        );
+                      },
+                      itemBuilder: (context, index) {
+                        print('url index  $index:' +
+                            viewmodel.videoList[index].url.toString());
+                        final data = viewmodel.videoList[index];
+                        return GestureDetector(
+                          onTap: () {
+                            _controller!.value.isPlaying
+                                ? _controller!.pause()
+                                : _controller!.play();
+                          },
+                          child: Stack(
                             children: [
-                              Center(
-                                  child: AspectRatio(
-                                      aspectRatio:
-                                          _controller!.value.aspectRatio,
-                                      child: VideoPlayer(_controller!))),
+                              Center(child: VideoPlayer(_controller!)),
                               Container(
                                 width: double.infinity,
                                 color: Colors.transparent,
@@ -192,9 +188,9 @@ class _ShortsViewState extends State<ShortsView> {
                                 ),
                               ),
                             ],
-                          );
-                        }),
-                  ),
+                          ),
+                        );
+                      }),
                   buildAppBar(context),
                 ],
               );
